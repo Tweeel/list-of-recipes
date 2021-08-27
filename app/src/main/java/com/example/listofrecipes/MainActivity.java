@@ -30,19 +30,19 @@ public class MainActivity extends AppCompatActivity {
 
         Model m = new Model();
         m.setTitle("Crepe");
-        m.setDescription("this isthe description of the crepe");
+        m.setDescription("this is the crepe description");
         m.setImg(R.drawable.crepe);
         models.add(m);
 
         m = new Model();
         m.setTitle("Cheesecake");
-        m.setDescription("this isthe description of the cheesecake");
+        m.setDescription("this is the cheesecake description");
         m.setImg(R.drawable.cheesecake);
         models.add(m);
 
         m = new Model();
         m.setTitle("Panecake");
-        m.setDescription("this isthe description of the panecake");
+        m.setDescription("this is the panecake description");
         m.setImg(R.drawable.panecake);
         models.add(m);
 

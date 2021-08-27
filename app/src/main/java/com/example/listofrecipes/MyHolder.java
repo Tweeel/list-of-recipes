@@ -11,13 +11,15 @@ public class MyHolder extends RecyclerView.ViewHolder implements View.OnClickLis
 
     ImageView mIneaView;
     TextView mTitle,mDes;
-    ItemClickListener itemClickListener;
+    static ItemClickListener itemClickListener;
 
     MyHolder(@NonNull View itemView) {
         super(itemView);
         this.mIneaView = itemView.findViewById(R.id.imageTv);
         this.mTitle = itemView.findViewById(R.id.titleTv);
         this.mDes = itemView.findViewById(R.id.descriptionTv);
+
+        itemView.setOnClickListener(this);
     }
 
     @Override
@@ -25,7 +27,7 @@ public class MyHolder extends RecyclerView.ViewHolder implements View.OnClickLis
         this.itemClickListener.onItemClickListiner(view,getLayoutPosition());
     }
 
-    public void setItemClickListener(ItemClickListener ic){
-        this.itemClickListener = ic;
+     static void setItemClickListener(ItemClickListener ic){
+        itemClickListener = ic;
     }
 }
